@@ -135,7 +135,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, give a breif description of what HTTP is.
 
 ```md
-<!-- your answer here -->
+HTTP is a protocol for handling client/server interactions. It is a standardized protocol and because of this it allows services which may differ to handle information in the same way.
 ```
 
 ## Describe what a client is and what a server is
@@ -143,7 +143,7 @@ In your own words, give a breif description of what HTTP is.
  What is a client is and what is a server? How do they interact with each other?
 
 ```md
-<!-- your answer here -->
+A client is the program which makes resource requests to a server. A server is a place in which resources are hosted. Clients make requests to servers for a particular resource. The server evaluates these requests and returns returns resources provided that particular criteria are met (i.e. the resource exists, the client has access to said resource).
 ```
 
 ## Describe the 4 most common HTTP verbs
@@ -152,7 +152,10 @@ What are the 4 most common HTTP verbs used when creating a RESTful API. How
 would you use each?
 
 ```md
-<!-- your answer here -->
+GET is used to request resources from a server (I liken it to pull in GIT).
+PUT is used to make an update to a resource on a server (Push in GIT).
+DELETE is used to try and DELETE a particular resource on a server.
+POST is used (I think) to continually to modify resources on a server. (Listen event??)
 ```
 
 ## Describe what a Response is
@@ -161,7 +164,7 @@ What is a response? what does it contain? What are some common status codes in a
 response and what do they mean?
 
 ```md
-<!-- your answer here -->
+A response is what is send back to the client from the server after making a request. It contains information about pertaining to the request.
 ```
 
 ## Make a curl request
@@ -169,7 +172,7 @@ response and what do they mean?
 Using curl, how would you get the content from Reddit.com?
 
 ```md
-<!-- your answer here -->
+GET -v www.reddit.com
 ```
 
 ## Describe the parts of a URL
@@ -179,5 +182,8 @@ refer to this list often in the next few weeks, so it's important to keep it in
 an easy-to-reference place.
 
 ```md
-<!-- your answer here -->
+Protocol:Defines how the server deals with the request Domain Name: a literal string which is passed as an ip adderss which the server references to look for the requested resource.
+Port: Determines which web application to route the request through.
+Path: Tells server where to find the specific resource within the host directory.
+Query/parameters/fergments: Additional resource references
 ```
